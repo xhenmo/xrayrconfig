@@ -1,0 +1,34 @@
+{
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "netflix_proxy",
+        "domain": [
+          "geosite:netflix",
+          "geosite:disney",
+          "geosite:dazn"
+        ]
+      },
+      {
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked",
+        "type": "field"
+      },
+      {
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ],
+        "type": "field"
+      }
+    ]
+}
