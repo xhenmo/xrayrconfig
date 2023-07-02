@@ -16,9 +16,9 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, NewV2board, PMpanel, Proxypanel, V2RaySocks
     ApiConfig:
-      ApiHost: "https://peland.top"
+      ApiHost: "https://peland.xyz"
       ApiKey: "xhenmoxhenmoxhenmo"
-      NodeID: 2
+      NodeID: 5
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
